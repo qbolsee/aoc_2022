@@ -12,7 +12,7 @@ def main():
     compartments2 = []
     sacks = []
     priority_total = 0
-    with open("day3_input.txt", "r") as f:
+    with open("day03_input.txt", "r") as f:
         for line in f.readlines():
             txt = line.strip()
             n = len(txt)

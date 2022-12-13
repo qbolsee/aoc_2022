@@ -3,7 +3,7 @@
 def main():
     n1 = 0
     n2 = 0
-    with open("day4_input.txt", "r") as f:
+    with open("day04_input.txt", "r") as f:
         for line in f.readlines():
             range1, range2 = line.strip().split(",")
             s1, e1 = [int(x) for x in range1.split("-")]

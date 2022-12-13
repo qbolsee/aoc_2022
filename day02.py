@@ -19,7 +19,7 @@ def main():
 
     score = 0
     score2 = 0
-    with open("day2_input.txt", "r") as f:
+    with open("day02_input.txt", "r") as f:
         for line in f.readlines():
             letter1, letter2 = line.strip().split(" ")
             ind1 = ord(letter1) - ord("A")

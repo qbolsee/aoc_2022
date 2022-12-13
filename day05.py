@@ -17,7 +17,7 @@ def main():
     n = 9
     piles = [[] for _ in range(n)]
 
-    with open("day5_input.txt", "r") as f:
+    with open("day05_input.txt", "r") as f:
         section = 0
         moves = []
         for line in f.readlines():

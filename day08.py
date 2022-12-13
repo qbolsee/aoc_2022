@@ -50,7 +50,7 @@ def raycast_from_tree(trees, ij):
 
 def main():
     m = []
-    with open("day8_input.txt", "r") as f:
+    with open("day08_input.txt", "r") as f:
         for line in f.readlines():
             line = line.strip()
             m.append([int(x) for x in line])

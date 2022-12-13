@@ -73,7 +73,7 @@ def main():
 
     reread = False
 
-    with open("day7_input.txt", "r") as f:
+    with open("day07_input.txt", "r") as f:
         state = STATE_START
         # print(state, node.name if node is not None else node)
         while state != STATE_DONE:

@@ -3,7 +3,7 @@
 def main():
     elves = []
 
-    with open("day1_input.txt", "r") as f:
+    with open("day01_input.txt", "r") as f:
         txt = f.read()
         for txt_vals in txt.split("\n\n"):
             vals = [int(x) for x in txt_vals.strip().split("\n")]

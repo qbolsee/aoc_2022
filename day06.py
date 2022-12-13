@@ -1,7 +1,7 @@
 
 
 def main():
-    with open("day6_input.txt", "r") as f:
+    with open("day06_input.txt", "r") as f:
         txt = f.readline().strip()
         i = 4
         while i < len(txt):

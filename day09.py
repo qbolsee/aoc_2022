@@ -81,7 +81,7 @@ def run_moves(moves, n_tails=1, show_grid=False):
 
 def main():
     moves = []
-    with open("day9_input.txt", "r") as f:
+    with open("day09_input.txt", "r") as f:
         for line in f.readlines():
             key_txt, dist_txt = line.split(" ")
             moves.append((key_txt, int(dist_txt)))
