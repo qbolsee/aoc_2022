@@ -6,7 +6,7 @@ import time
 def show(center, head, tails):
     n_tails, _ = tails.shape
     vector_head = head - center
-    n = 21
+    n = 33
     n_half = n // 2
     for y in range(n):
         for x in range(n):
@@ -42,7 +42,7 @@ def run_moves(moves, n_tails=1, show_grid=False):
         if show_grid:
             print(key, dist)
         delta = lookup_delta[key]
-        head_center = np.copy(head)
+        head_center = np.array([0, 0], np.int32)
         for k in range(dist):
             for t_index in range(n_tails):
                 if t_index == 0:
@@ -75,7 +75,7 @@ def run_moves(moves, n_tails=1, show_grid=False):
                 os.system("cls")
                 show(head_center, head, tails)
                 print("===")
-                time.sleep(0.1)
+                time.sleep(0.02)
     return pos_visited
 
 
@@ -87,7 +87,7 @@ def main():
             moves.append((key_txt, int(dist_txt)))
     pos_visited = run_moves(moves, show_grid=False)
     print(len(pos_visited))
-    pos_visited = run_moves(moves, 9, show_grid=False)
+    pos_visited = run_moves(moves, 9, show_grid=True)
     print(len(pos_visited))
     # print(moves[:20])
 
